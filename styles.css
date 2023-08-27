@@ -1,0 +1,69 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+.background {
+    background-image: url('5166950.jpg');
+    background-size: cover;
+    background-attachment: fixed; /* This ensures the background stays in place while scrolling */
+    background-position: center;
+    height: 100%;
+    overflow: auto;
+    min-height: 100vh; /* Ensure it covers the entire viewport height */
+}
+
+.container {
+    width: 100%;
+}
+
+.box-container {
+    width: 50%; /* Adjust to desired width */
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-left: 0; /* Align to the left */
+}
+
+.btn-custom-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-custom-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-custom-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-custom-danger:hover {
+    background-color: #b21f2d;
+    border-color: #b21f2d;
+}
+
+.nested-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 20px; 
+    margin-left: 0; /* Reset left margin */
+    padding: 30px; /* Padding for appearance */
+    border-left: 10px solid #007bff;
+    width: auto; /* Let the box size adjust to its content */
+    min-width: 25%; /* Minimum width you've mentioned */
+    max-width: 80%; /* Set a limit to how wide it can grow */
+    word-wrap: break-word; /* Ensure text wraps if too long */
+    box-sizing: border-box; /* Padding doesn't increase width */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-y: visible; /* Make     vertical overflow scrollable */
+    max-height: 80vh; /* Limit height */
+    display: inline-block; /* Let it grow with content, but be block-like */
+}
+
+.nested-box > .nested-box {
+    max-width: calc(100% - 60px); /* Adjust width of child nested boxes, subtracting padding and borders */
+}
+
+
