@@ -19,7 +19,7 @@ function handleDrop(e) {
     if (targetID) {
         draggedItem.parentID = parseInt(targetID);
     } else {
-        draggedItem.parentID = null; // It becomes a root item
+        draggedItem.parentID = null;
     }
 
     saveToLocalStorage();
